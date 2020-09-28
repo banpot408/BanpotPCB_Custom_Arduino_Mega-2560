@@ -44,11 +44,25 @@ void loop() {
   digitalWrite(RL_3, HIGH);
   digitalWrite(RL_4, HIGH);
   
-  delay(3000);                       // wait for a second
+  delay(1000);                       // wait for a second
   digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
   digitalWrite(RL_1, LOW);  
   digitalWrite(RL_2, LOW);
   digitalWrite(RL_3, LOW);
   digitalWrite(RL_4, LOW);
-  delay(3000);                       // wait for a second
+  delay(1000);                       // wait for a second
+
+  for(int i=24;i<28;i++){
+    digitalWrite(i, HIGH);
+    delay(200);
+  }
+  delay(500);
+  digitalWrite(RL_1, LOW);  
+  digitalWrite(RL_2, LOW);
+  digitalWrite(RL_3, LOW);
+  digitalWrite(RL_4, LOW);
+
+
+
+  
 }
